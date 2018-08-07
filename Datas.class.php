@@ -5,16 +5,11 @@
 class workData{
 
 	//DATA ATUAL DO SERVIDOR POR EXTENSO
-	public function dataAtual($Format = NULL){
+	public function dataAtual(){
 		setlocale(LC_TIME, 'pt_BR', 'pt_BR.utf-8','pt_BR.utf-8', 'portuguese');
 		date_default_timezone_set('America/Sao_Paulo');
-		if($Format == NULL):
-			echo strftime('%A, %d de %B de %Y', strtotime('today'));
-		elseif($Format == 1):
-			echo strftime('%A, %d/%m/%Y', strtotime('today'));
-		else:
-			echo "Paramentro inválido";
-		endif;
+		echo strftime('%A, %d de %B de %Y', strtotime('today'));
+		
 	}
 
 	//RETORNA UM ARRAY COM A DATA POR EXTENSO 
