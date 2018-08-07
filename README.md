@@ -21,11 +21,11 @@ echo "<h2>Trabalhando com datas</h2>";
 
 $Datas->dataAtual();
 
-echo "<hr>";
+```console
 
 $DT = $Datas->DataExtenso('21-07-2018'); // dd/mm/YYYY; dd-mm-YYYY; YYYY-mm-dd
 echo "{$DT['Week']}, {$DT['Day']} de {$DT['Month']} de {$DT['Year']}";
-
+```
 echo "<hr>";
 
 $Data = ['dtStart' => '25/02/2015', 'dtEnd' => '2018-03-01'];
