@@ -60,7 +60,7 @@ class workData{
 
 
 	//RETORNA UM ARRAY DA QUANTIDADE DE DIAS, MESES E ANO ENTRE DUAS DATAS
-	function deferencaDatas($Datas){
+	function diferencaDatas($Datas){
 		$dataStart = $this->validateDate($Datas['dtStart']);
 		$dataEnd   = $this->validateDate($Datas['dtEnd']);
 
